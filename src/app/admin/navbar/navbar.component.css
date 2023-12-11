@@ -1,0 +1,28 @@
+.navbar {
+    background-color: white;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    border-radius: 0;
+    box-shadow: 0 2px 4px #FB8500 !important; 
+}
+.my-drodown {
+    height: min-content !important;
+    height: 30px !important;
+}
+.my-drodown .dropdown {
+    position: relative;
+    margin-top: 12px !important;
+    margin-top: 12px !important;
+}
+.s-d {
+    background-color: #023047;
+    font-size: 0.7em;
+    padding: 12px 14px;
+}
+.search .form-control:focus {
+    box-shadow: 0 0 2px 2px #023047;
+}

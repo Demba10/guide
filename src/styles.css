@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.g-sidenav-show {
+    height: max-content !important;
+}
+.sidenav {
+    /* border:  2px solid black !important; */
+}
+.sidebody {
+    /* border: 2px solid black; */
+    height: max-content !important;
+}
+.main-content {
+    /* border: 2px solid black !important; */
+    height: 100vh !important;
+    overflow-y: scroll !important;
+}
