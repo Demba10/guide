@@ -1,0 +1,66 @@
+<div>
+  <button type="button" class="btn titre" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Ajouter une note
+  </button>
+</div>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="staticBackdropLabel">Ajouter une categorie</h1>
+
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+            <label for="prenom" class="form-label">Nom de la catégorie</label>
+            <input type="text" class="form-control" id="prenom" [(ngModel)]="doneAdd.nomCategorie" name="prenom">
+          </div>
+          <div class="mb-3">
+            <label for="nom" class="form-label">Description</label>
+            <input type="text" name="nom" class="form-control" id="nomInput" [(ngModel)]="doneAdd.description">
+          </div>
+
+        </form>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary" id="btn1" data-bs-dismiss="modal"
+          (click)="addData()">Enregistrer</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- tableau -->
+
+<!-- tableau liste note -->
+<div class=" container card-body shadow-lg mt-5 ">
+  <div class=" ">
+    <table class="table mb-3  table-striped">
+      <thead>
+        <tr>
+          <th appCouleurfond></th>
+          <th appCouleurfond>Nom de la catégorie</th>
+          <th appCouleurfond>Description</th>
+
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr *ngFor="let bodyTab of tabNote">
+          <td></td>
+          <td>{{bodyTab.nomCategorie}} </td>
+          <td>{{bodyTab.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

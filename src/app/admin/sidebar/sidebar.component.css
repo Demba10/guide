@@ -22,3 +22,8 @@ body {
     height: 100vh !important;
     height: calc(100vh - 70px) !important;
 }
+
+ .nav-item span:hover
+{
+  background-color: #fb8500 !important;
+}

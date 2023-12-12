@@ -7,7 +7,11 @@
     top: 0;
     z-index: 999;
     border-radius: 0;
-    box-shadow: 0 2px 4px #FB8500 !important; 
+    box-shadow: 0 2px 4px #3c3c3c !important;
+}
+
+.font-weight-bolder img{
+  width: 17%;
 }
 .my-drodown {
     height: min-content !important;
